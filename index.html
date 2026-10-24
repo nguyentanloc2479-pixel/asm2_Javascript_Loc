@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gadgetly - Trang chủ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/Style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">🪐 Gala<span>xy</span></a>
+
+        <nav class="menu">
+          <a href="index.html" class="active">Trang chủ</a>
+          <a href="products.html">Sản phẩm</a>
+          <a href="cart.html">Giỏ hàng</a>
+        </nav>
+
+        <div class="user-area">
+          <div id="guestBox">
+            <a href="Login.html">Đăng nhập</a>
+            <a class="btn btn-small" href="Register.html">Đăng ký</a>
+          </div>
+          <div id="userBox" class="hidden">
+            <span id="userName"></span>
+            <button id="logoutBtn" class="btn btn-small btn-outline">Đăng xuất</button>
+          </div>
+          <a class="cart-link" href="cart.html">🛒 <span id="cartCount">0</span></a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <div class="hero-text">
+          <span class="badge">✨ KHÁM PHÁ VŨ TRỤ</span>
+          <h1>
+            Thắp sáng góc <span class="gradient-text"> học tập</span> bằng nét đẹp kỳ ảo của vũ trụ.
+          </h1>
+          <p>Những bức tranh hành tinh rực rỡ, thiên hà huyền bí.</p>
+          <a class="btn" href="products.html">Xem sản phẩm →</a>
+          <a class="btn btn-outline" href="Register.html">Tạo tài khoản</a>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <span class="star star-one"></span>
+          <span class="star star-two"></span>
+          <span class="star star-three"></span>
+          <span class="star star-four"></span>
+          <span class="shooting-star"></span>
+          <div class="planet-scene">
+            <div class="planet-halo"></div>
+            <div class="ring ring-back"></div>
+            <div class="planet"></div>
+            <div class="ring ring-front"></div>
+            <div class="moon"></div>
+            <div class="tiny-planet"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container section">
+        <div class="section-head">
+          <h2>🔥 Sản phẩm nổi bật</h2>
+          <a href="products.html">Xem tất cả →</a>
+        </div>
+        <div class="product-grid" id="featuredList"></div>
+      </section>
+
+      <section class="container section">
+        <div class="section-head">
+          <h2>🆕 Sản phẩm mới</h2>
+          <a href="products.html">Xem tất cả →</a>
+        </div>
+        <div class="product-grid" id="newList"></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="logo">🪐 Galaxy<span>ly</span></div>
+          <p class="muted">Chạm tay vào vũ trụ ngay tại góc nhỏ sáng tạo.</p>
+        </div>
+        <div>
+          <h4>Mua sắm</h4>
+          <a href="products.html">Sản phẩm</a>
+          <a href="cart.html">Giỏ hàng</a>
+        </div>
+        <div>
+          <h4>Tài khoản</h4>
+          <a href="Login.html">Đăng nhập</a>
+          <a href="Register.html">Đăng ký</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
